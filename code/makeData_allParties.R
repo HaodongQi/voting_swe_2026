@@ -57,7 +57,8 @@ cand_raw <- cand_raw |>
     pty_code=partikod, pty_short=partiforkortning, pty_name=partibeteckning,
   )  |> 
   mutate(
-    pty_short=tolower(pty_short), pty_name=tolower(pty_name)
+    pty_short=tolower(pty_short), pty_name=tolower(pty_name),
+    lans_kommun_kod=toString(lans_kommun_kod)
   )
 
 # party code important
@@ -181,7 +182,7 @@ votes_long <- votes_raw[,c(id_cols,total_cols,party_cols)] %>%
     pty_short = str_to_lower(pty_short),
     pty_short = sub("_tal_2$", "", pty_short),
     pty_short = sub("_tal$", "", pty_short),
-    lans_kommun_kod = paste0(lans_kod,kommun_kod) |> as.numeric()
+    lans_kommun_kod = paste0(sprintf("%02d",lans_kod), sprintf("%02d", kommun_kod)) 
   )
 
 # ---- add party code
@@ -235,7 +236,7 @@ fa <- fa |> filter(x1=="K") |>
     lans_kod=x2, kommun_kod = x4, cand_nr=x12
   ) |> 
   mutate(
-    lans_kommun_kod=paste0(lans_kod, kommun_kod) |> as.numeric(),
+    lans_kommun_kod = paste0(sprintf("%02d",lans_kod), sprintf("%02d", kommun_kod)) 
   )
 
 # select vars
@@ -294,7 +295,6 @@ votes_long2 <- left_join(votes_long2, cand_aggr, by = c("lans_kommun_kod", "pty_
 votes_long2 <- votes_long2 %>%
   mutate(
     has_cand = ifelse(is.na(cand_n), 0L, 1L),
-    has_pty_code = ifelse(!is.na(pty_code), 1L, 0L),
 
     cand_n = replace_na(cand_n, 0),,
     cand_women = replace_na(cand_women, 0)
@@ -348,7 +348,7 @@ votes_long <- votes_raw %>%
     votes = ifelse(is.na(votes), 0, votes),
     pty_short = str_to_lower(pty_short),
     pty_short = sub("_tal$", "", pty_short),
-    lans_kommun_kod = paste0(lans_kod,kommun_kod) |> as.numeric()
+    lans_kommun_kod = paste0(sprintf("%02d",lans_kod), sprintf("%02d", kommun_kod)) 
   )
 
 # ---- add party code
@@ -383,10 +383,10 @@ cand_raw <- cand_raw |> filter(valtyp=="K")
 # rename
 cand_raw <- cand_raw |> 
   rename(
-    lans_kommun_kod=valomradeskod,
     cand_age=alder_pa_valdagen, cand_sex=kon, 
     pty_code=partikod, cand_nr=kandidatnummer
-  )  
+  ) |> 
+  mutate(lans_kommun_kod=sprintf("%04d", valomradeskod))
 
 # select vars
 cand_raw <- cand_raw |> 
@@ -442,7 +442,6 @@ votes_long2 <- left_join(votes_long2, cand_aggr, by = c("lans_kommun_kod", "pty_
 votes_long2 <- votes_long2 %>%
   mutate(
     has_cand = ifelse(is.na(cand_n), 0L, 1L),
-    has_pty_code = ifelse(!is.na(pty_code), 1L, 0L),
 
     cand_n = replace_na(cand_n, 0),,
     cand_women = replace_na(cand_women, 0)
@@ -517,7 +516,7 @@ votes_long <- votes_raw %>%
     votes = ifelse(is.na(votes), 0, votes),
     pty_name = str_to_lower(pty_name),
     pty_name = sub("_tal$", "", pty_name),
-    lans_kommun_kod = paste0(lans_kod,kommun_kod) |> as.numeric()
+    lans_kommun_kod = paste0(sprintf("%02d",lans_kod), sprintf("%02d", kommun_kod)) 
   )
 
 # add back eligible voters
@@ -557,10 +556,10 @@ cand_raw <- cand_raw |> filter(valtyp=="KF")
 # rename
 cand_raw <- cand_raw |> 
   rename(
-    lans_kommun_kod=valomradeskod,
     cand_age=alder_pa_valdagen, cand_sex=kon, 
     pty_code=partikod, cand_nr=kandidatnummer
-  )  
+  )  |> 
+  mutate(lans_kommun_kod=sprintf("%04d",valomradeskod))
 
 # select vars
 cand_raw <- cand_raw |> 
@@ -615,7 +614,6 @@ votes_long2 <- left_join(votes_long2, cand_aggr, by = c("lans_kommun_kod", "pty_
 votes_long2 <- votes_long2 %>%
   mutate(
     has_cand = ifelse(is.na(cand_n), 0L, 1L),
-    has_pty_code = ifelse(!is.na(pty_code), 1L, 0L),
 
     cand_n = replace_na(cand_n, 0),,
     cand_women = replace_na(cand_women, 0)
@@ -624,11 +622,9 @@ votes_long2 <- votes_long2 %>%
 ))
 
 # merge party dict 
-votes_long2 <- votes_long2 |> left_join(party_code_list)
+votes_long2 <- votes_long2 |> left_join(party_code_list) |> ungroup()
 
 fwrite(votes_long2, file.path(getwd(), "input_data", paste0(yr, "_clean_cand.csv") ))
-
-
 
 # ------------------------------------------------------------------------
 # 2026 predictor data for forecast, offset, candidate composition, lag votes
@@ -650,10 +646,10 @@ votes_raw <- votes_raw |>
     lans_kod=lanskod, 
     lans_name=lansnamn, 
     kommun_name=valomradesnamn,
-    lans_kommun_kod=valomradeskod,
     pty_code=partikod
   ) |> 
-  mutate(kommun_kod=as.numeric(gsub("\\d{2}$", "", lans_kommun_kod)))
+  mutate(kommun_kod=as.numeric(gsub("\\d{2}$", "", valomradeskod))) |> 
+  mutate(lans_kommun_kod= sprintf("%04d",valomradeskod) ) 
 
 # Identify ID and TOTAL columns (Swedish diacritics were removed by clean_names())
 id_cols    <- c(grep("lans_|kommun_", names(votes_raw), value=T, ignore.case = T))
@@ -672,9 +668,9 @@ f <- list.files(file.path(getwd(),"input_data"), full.names = T)
 f <- f[grepl(yr, f) ]
 f <- f[grepl("tot_elig",f, ignore.case = T) & !grepl("~\\$", f)] 
 temp <- read_xlsx(f, sheet = "Antal röstberättigade") %>% clean_names() |> as_tibble() |> 
-  mutate(lans_kommun_kod=kommunkod |> as.numeric()) |> 
   rename(
-    tot_elig_voter=rostberattigade_val_till_kommunfullmaktige 
+    tot_elig_voter=rostberattigade_val_till_kommunfullmaktige,
+    lans_kommun_kod= kommunkod
   ) |> 
   select(matches("lans_|tot_")) |> 
   group_by(lans_kommun_kod) |> dplyr::summarise(tot_elig_voter=sum(tot_elig_voter))
@@ -693,10 +689,10 @@ cand_raw <- cand_raw |> filter(valtyp=="KF")
 # rename
 cand_raw <- cand_raw |> 
   rename(
-    lans_kommun_kod=valomradeskod,
     cand_age=alder_pa_valdagen, cand_sex=kon, 
     pty_code=partikod, cand_nr=kandidatnummer
-  )  
+  )  |> 
+  mutate(lans_kommun_kod= sprintf("%04d",valomradeskod) )
 
 # select vars
 cand_raw <- cand_raw |> 
@@ -751,7 +747,6 @@ votes_long2 <- left_join(votes_long2, cand_aggr, by = c("lans_kommun_kod", "pty_
 votes_long2 <- votes_long2 %>%
   mutate(
     has_cand = ifelse(is.na(cand_n), 0L, 1L),
-    has_pty_code = ifelse(!is.na(pty_code), 1L, 0L),
 
     cand_n = replace_na(cand_n, 0),,
     cand_women = replace_na(cand_women, 0)
