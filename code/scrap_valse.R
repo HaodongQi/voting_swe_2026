@@ -13,6 +13,7 @@ library(rvest)
 library(httr)
 library(readr)
 library(stringr)
+pacman::p_load(tidyverse)
 
 dest_file <- file.path(getwd(),"input_data")
 
