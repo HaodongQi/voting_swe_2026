@@ -1,179 +1,21 @@
-pty_name,pred_votes,pred_per_voter,pred_vote_share
-arbetarepartiet-socialdemokraterna,2031054.22097997,0.2418,0.2923
-moderaterna,1489350.7059764,0.1773,0.2144
-sverigedemokraterna,949548.61346911,0.113,0.1367
-centerpartiet,574680.015062303,0.0684,0.0827
-vänsterpartiet,530252.245243104,0.0633,0.0763
-kristdemokraterna,384543.456341077,0.0458,0.0553
-miljöpartiet de gröna,370326.798762298,0.0447,0.0533
-liberalerna (tidigare folkpartiet),296958.063555333,0.0353,0.0427
-demokraterna,38088.747585987,0.0777,0.0055
-ändrings partiet revolution,30331.3288197338,0.0036,0.0044
-medborgerlig samling,22887.5096157749,0.0027,0.0033
-kommunistiska partiet,18584.8755679306,0.0022,0.0027
-partiet nyans,16358.1932932352,0.0019,0.0024
-feministiskt initiativ,12809.9936968062,0.0018,0.0018
-nackalistan,8456.80889401558,0.0969,0.0012
-piratpartiet,7836.80189874177,9e-04,0.0011
-örebropartiet,6271.13219572899,0.0493,9e-04
-alternativ för sverige,5895.09250130956,7e-04,8e-04
-linköpingslistan,5228.73646607295,0.0388,8e-04
-lidingöpartiet,5068.90916619895,0.1351,7e-04
-kristna värdepartiet,3831.98338569451,5e-04,6e-04
-drevvikenpartiet,3828.09218010781,0.044,6e-04
-sjukvårdspartiet,4312.41428913589,0.0229,6e-04
-väsbys bästa,3199.90726291908,0.0825,5e-04
-roslagspartiet,3157.14922444929,0.082,5e-04
-demokratiska sekulära socialister arbetarpartiet,3742.32599341614,0.0123,5e-04
-nystart enköping (ne),3311.01412995193,0.0867,5e-04
-vetlanda framåtanda,3448.01326323003,0.16,5e-04
-skövdepartiet,3792.16626167388,0.0822,5e-04
-tullingepartiet,2445.69337669143,0.0333,4e-04
-knivsta.nu,2704.37614025791,0.1667,4e-04
-landsbygdspartiet oberoende,2849.18402877849,0.0058,4e-04
-medborgarpartiet i gislaved,2707.57920488527,0.1203,4e-04
-knapptryckarna,1868.06593010774,2e-04,3e-04
-huddingepartiet,2180.32907399376,0.0251,3e-04
-nykvarnspartiet,1833.8950403749,0.1946,3e-04
-waxholmspartiet - borgerligt alternativ,2151.81609601232,0.2291,3e-04
-kommunens väl,1778.78219701008,0.0615,3e-04
-vårt söderslätt,2365.80260862063,0.063,3e-04
-folkets väl,1845.76527975191,0.0446,3e-04
-hjärta för halmstad,2018.98840631931,0.024,3e-04
-kungsbackaborna,1944.91017524369,0.029,3e-04
-uddevallapartiet,1976.35789128926,0.0442,3e-04
-nya ulricehamn,2326.61553001331,0.1175,3e-04
-oberoende realister,2244.60990361416,0.2374,3e-04
-bygdepartiet,2253.19885616658,0.1713,3e-04
-kommunlistan,2406.72026687155,0.1075,3e-04
-morapartiet,2261.36144875327,0.135,3e-04
-bollnäspartiet,2334.25139828838,0.1112,3e-04
-rättvisepartiet socialisterna,2055.74116073989,0.0315,3e-04
-direktdemokraterna,1424.87372668835,2e-04,2e-04
-mod,1113.82923454361,1e-04,2e-04
-realistpartiet,1669.53379107491,0.0211,2e-04
-sorundanet nynäshamns kommunparti,1408.98850669458,0.0584,2e-04
-konsensus - för vadstenas bästa,1198.14914147185,0.1918,2e-04
-alvesta alternativet,1299.49316346453,0.0845,2e-04
-fokus bjärred,1339.47065439632,0.0716,2e-04
-bjärepartiet,1398.21129756218,0.1059,2e-04
-förnyalund,1315.18064783239,0.0125,2e-04
-engelholmspartiet,1662.3453134695,0.046,2e-04
-stenungsundspartiet,1156.97349139909,0.053,2e-04
-götenes framtid,1051.84087906347,0.0995,2e-04
-utvecklingspartiet,1217.07772087813,0.0308,2e-04
-medborgarpartiet,1520.31873027395,0.0476,2e-04
-karlstadpartiet livskvalitet,1447.91168284102,0.018,2e-04
-västra initiativet,1404.84072398229,0.0954,2e-04
-västjämtlands väl,1478.05319123519,0.1483,2e-04
-aktiv samling - bodenalternativet,1206.61444871903,0.053,2e-04
-öpartiet,472.405869265778,0.0216,1e-04
-rönningepartiet,777.248461061742,0.0597,1e-04
-roslagens oberoende parti,553.487701770024,0.01,1e-04
-sigtunapartiet samling för sigtuna,525.538404830205,0.0132,1e-04
-bålstapartiet,608.064754777127,0.0339,1e-04
-håbodemokraterna,713.406297550751,0.0398,1e-04
-tierpslistan,906.301043087243,0.0539,1e-04
-utvecklingspartiet demokraterna,841.430650965453,0.0043,1e-04
-vingåkerspartiet - vtl,553.499760194802,0.0791,1e-04
-strängnäspartiet,845.368706334756,0.0272,1e-04
-westbopartiet,556.743140625263,0.0247,1e-04
-empa(r)tiet,490.11820568445,0.0427,1e-04
-safe - solidaritet arbete fred ekologi,799.379784710612,0.0326,1e-04
-alternativet,762.773520136242,0.0233,1e-04
-westerwikspartiet,703.419188019859,0.0238,1e-04
-framtid öland,362.604120539079,0.0393,1e-04
-ronnebypartiet,564.81690578132,0.0248,1e-04
-löddebygden,538.59474558124,0.0216,1e-04
-barapartiet,914.262528402774,0.0525,1e-04
-älska svedala,508.707608156496,0.0292,1e-04
-perstorps framtid,567.429966036285,0.102,1e-04
-vi i perstorp,619.967806707855,0.1115,1e-04
-vår framtid - klippan,693.726702203514,0.0491,1e-04
-laholmspartiet,775.371477577193,0.0367,1e-04
-tjugofyrasju,495.588337441773,0.0089,1e-04
-varbergspartiet,637.537078825568,0.0115,1e-04
-kommunpartiet,349.526864302143,0.0116,1e-04
-tjörnpartiet,898.637114674117,0.0693,1e-04
-folkviljan orust,833.228764135118,0.0656,1e-04
-demokratiresan,841.614151954414,0.1085,1e-04
-framtid i ale,365.133043866212,0.0148,1e-04
-folkets röst,854.915704171006,0.1124,1e-04
-hela vara kommuns bästa,787.578677381079,0.0611,1e-04
-lysekilspartiet,748.119161833184,0.0657,1e-04
-vi tidaholm,590.441767432372,0.0581,1e-04
-hela edas lista,376.851868784786,0.0571,1e-04
-sjukvårdspartiet i värmland,444.558898291822,0.0158,1e-04
-de oberoende i torsby,693.46136158571,0.0743,1e-04
-hela sunne,497.597420923496,0.0462,1e-04
-arvikapartiet,826.188832113373,0.0402,1e-04
-norapartiet,569.728904704082,0.0669,1e-04
-demokraterna i norberg,400.358657829693,0.0929,1e-04
-salas bästa,966.03891692315,0.0535,1e-04
-vanligt folk i köpings kommun,444.353790903266,0.0217,1e-04
-kommunal samling,778.11153514513,0.0964,1e-04
-nordanstigspartiet.se,450.330850300075,0.0606,1e-04
-ljusdalsbygdens parti,495.093554919166,0.033,1e-04
-vår framtids politiska utskott,894.653734478634,0.1216,1e-04
-timråpartiet,523.316352307599,0.0371,1e-04
-folkets röst - vox humana,475.470427544704,0.0567,1e-04
-dorotea kommunlista,356.827448278414,0.1935,1e-04
-framtid i jokkmokks kommun,592.41385033221,0.153,1e-04
-sámelistu/samelistan partipolitiskt obunden,533.574457828559,0.0297,1e-04
-enhet,163.582252235082,0,0
-trygghetspartiet,169.163383103771,0,0
-common sense in sweden,1.22816410730792,0,0
-framtidstro,7.84695173878146,0,0
-ond kyckling partiet,19.3720591348013,0,0
-en vis avskaffar asylrätten!,1.59313453113074,0,0
-volt sverige,168.760072862868,0,0
-ip - idrottspartiet - rädda stadshagens ip!,1.22249733777162,0,0
-vaxholmsdemokraterna,170.457742003678,0.0181,0
-pensionärspartiet i nynäshamns kommun,166.327242460824,0.0069,0
-tillsammans - partiet för hela heby kommun,44.1047529643256,0.0039,0
-lokalpartiet boa,338.147855465493,0.0188,0
-habodemokraterna,127.348937572581,0.0129,0
-klassiskt liberala partiet,9.69089484371432,1e-04,0
-tingsrydsalternativet,281.801425023295,0.029,0
-alvestademokraterna,37.8403690833955,0.0025,0
-bästa alternativet,48.3443464403584,0.0068,0
-socialisterna-välfärdspartiet,0.815320966157499,0,0
-partiet vändpunkt,32.8888005453088,3e-04,0
-sol-partiet sölvesborg och lister,75.4339533339794,0.0053,0
-mitt göinge,82.1772615925789,0.0076,0
-sveriges pensionärers intresseparti,140.989251026945,0.0113,0
-partiet för rättvisa och jämställdhet,0.38133917096845,0,0
-sveriges nationella demokratiska parti,30.5864265996607,1e-04,0
-romelepartiet skåne,2.9254359341119e-07,0,0
-sakpolitikerna,74.0466160187348,0.0011,0
-österlenpartiet,4.26524571429101e-06,0,0
-klimatinitiativ simrishamn,139.409619618652,0.0088,0
-halmstads lokala parti,245.046849538966,0.0029,0
-kommunpartiet mellerud,207.432767420382,0.0283,0
-edetlistan,0.000286137036552818,0,0
-seniorpartiet,37.7626897343426,1e-04,0
-liberal vision åmål,319.212843220274,0.0337,0
-nordvärmlands kommunparti,72.0615762253563,0.0077,0
-sans o balans,51.918618976335,0.0041,0
-framtidspartiet i lekeberg,278.778613801556,0.0428,0
-grythyttelistan,0.000120648105525692,0,0
-partiet för norbergs framtid,0.000259981024188322,0,0
-nyframtid,80.3807869773796,0.002,0
-dalademokraterna,265.21635472582,0.0127,0
-hoforspartiet,0.546935430336073,1e-04,0
-allt för ragunda,114.070062438925,0.0273,0
-jämtlands väl bräcke,140.917239484823,0.0284,0
-jämtlands väl krokom,332.276398164071,0.0274,0
-rättvis demokrati,160.344110110329,0.0179,0
-bergspartiet,1.4209281045615e-06,0,0
-härjedalspartiet,0.000221366636059566,0,0
-malålistan,322.167187611437,0.1393,0
-politiskt alternativ,206.549196560883,0.0409,0
-åselepartiet,158.785954178141,0.0729,0
-folkinitiativet arjeplog,327.547107390415,0.1528,0
-samernas väl,189.745292027963,0.049,0
-framtid i kalix,0.000300464035456012,0,0
-övertorneås fria alternativ,1.6310256739449e-06,0,0
-framtid s övertorneå,204.876564859171,0.0609,0
-framtid s,0.0165068338996609,0,0
-skol och landsbygdspartiet,324.142370654,0.0095,0
+pty_name,pred_votes,pred_vote_share,2022
+arbetarepartiet-socialdemokraterna,2031054,29.23 %,29.25%
+moderaterna,1489350,21.44 %,20.47%
+sverigedemokraterna,949548,13.67 %,14.52%
+centerpartiet,574680,8.27 %,7.67%
+vänsterpartiet,530252,7.63 %,8.23%
+kristdemokraterna,384543,5.53 %,5.35%
+miljöpartiet de gröna,370326,5.33 %,3.82%
+liberalerna (tidigare folkpartiet),296958,4.27 %,5.22%
+demokraterna,38088,0.55 %,0.33%
+ändrings partiet revolution,30331,0.44 %,
+medborgerlig samling,22887,0.33 %,0.38%
+kommunistiska partiet,18584,0.27 %,0.05%
+partiet nyans,16358,0.24 %,0.46%
+feministiskt initiativ,12809,0.18 %,0.27%
+nackalistan,8456,0.12 %,0.12%
+piratpartiet,7836,0.11 %,0.06%
+örebropartiet,6271,0.09 %,0.12%
+alternativ för sverige,5895,0.08 %,0.13%
+linköpingslistan,5228,0.08 %,0.15%
+lidingöpartiet,5068,0.07 %,0.08%
